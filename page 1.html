@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smash or pass game</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKa1MRlSnapu-fxCOOHYGs0C1AFz6DYTorotjLyVWrZCN6GmxcSsEQ1WMUDYrexCy5CJs:https://www.pngall.com/wp-content/uploads/2016/06/Milk-PNG-Clipart.png&usqp=CAU">
+</head>
+<body>
+    <style>
+        html {
+            background-image: url("https://i.ytimg.com/vi/CWNYZlt4t_Y/maxresdefault.jpg");
+            background-repeat: no-repeat, repeat;
+            background-size: cover;
+        }
+        .center {
+  margin: 0;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.button {
+    background-color:#00ff00;
+    width:300px;
+    height:50px;
+    font-size:30px;
+}
+.video {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color:black;
+}
+.end{
+    background-color:white;
+    display:none
+}
+    </style>
+    <div class="center">
+    <button class="button" id="play" onclick="document.getElementById('rickroll').style.display='block'">smash</button>
+    <input type="button" class="button" onclick="location.href='page 2.html';" value="pass" />
+    </div>
+    <p>
+        <video class="video" id="rickroll" video height="625" video width="1366" style="display:none" controls>
+            <source src="C:\Users\100100845\Downloads\rick-astley-never-gonna-give-you-up-official-music-video-easysave.net.mp4" type="video/mp4">
+        </video>
+        <script>
+            document.querySelector("#play").addEventListener("click", () => {
+  document.querySelector("#rickroll").play();
+});
+        </script>
+        <p class="end" id="good job">
+
+        </p>
+</body>
+</html>
